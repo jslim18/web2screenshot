@@ -5,7 +5,7 @@ function remind_DTP() {
 
     if (dayOfWeek != 6 && dayOfWeek != 0) {
       var image_DTP = init230606('https://www.bursamalaysia.com/market_information/market_statistic/securities', 1350, 1750, 0, 0);
-      sendPhoto(GETGROUPID, image_DTP);
+      sendPhoto(GETYOUROWNID, image_DTP);
     }
   
 }
@@ -17,7 +17,7 @@ function remind_QER() {
 
     if (dayOfWeek != 6 && dayOfWeek != 0) {
       var image_QER = init230606('https://www.malaysiastock.biz/Latest-Announcement.aspx', 500, 2500, 0, 350);
-      sendPhoto(GETGROUPID, image_QER);
+      sendPhoto(GETYOUROWNID, image_QER);
     }
   
 }
