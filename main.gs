@@ -1,3 +1,28 @@
+function remind_DTP() {
+
+    var today = new Date();
+    var dayOfWeek = today.getDay();
+
+    if (dayOfWeek != 6 && dayOfWeek != 0) {
+      var image_DTP = init230606('https://www.bursamalaysia.com/market_information/market_statistic/securities', 1350, 1750, 0, 0);
+      sendPhoto(-1001519431910, image_DTP);
+    }
+  
+}
+
+function remind_QER() {
+
+    var today = new Date();
+    var dayOfWeek = today.getDay();
+
+    if (dayOfWeek != 6 && dayOfWeek != 0) {
+      var image_QER = init230606('https://www.malaysiastock.biz/Latest-Announcement.aspx', 500, 2500, 0, 350);
+      sendPhoto(-1001519431910, image_QER);
+    }
+  
+}
+
+///////////////////////////////////////////////////////////////////////////
 
 function init230606(url_location, cord_x, cord_y, cord_l, cord_r) {
     /*
